@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body id="app">
+    <h1 id="Jeopardy" class="golden">JEOPARDY!</h1>
+    <div id="score" class="golden">
+        <span id="your-score-words">YOUR SCORE:</span>
+        <span id="your-score-actual">0</span>
+    </div>
+    <div id="question-bank" class="grid golden">
+        <div class="row row-title"></div>
+        <div class="row row-1"></div>
+        <div class="row row-2"></div>
+        <div class="row row-3"></div>
+        <div class="row row-4"></div>
+        <div class="row row-5"></div>
+    </div>
+    <div id="questions-results" class="onyx"></div>
+    <div id="user-input" class="golden">
+        <div id="question"></div>
+        <div id="your-answer-words">YOUR ANSWER</div>
+        <div id="user-answer" class="#">
+            <input type="text" id="typed-answer" class="me="answer">
+            <button id="submit-button" class="golden">Submit</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

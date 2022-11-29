@@ -1,0 +1,114 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 650px;
+  }
+  
+  /* this is for the font styling throughout */
+  .golden {
+    color: pink;
+    font-family: initial;
+    text-shadow: purple 1.5px 1px 2px;
+  }
+  
+  /* this is for the font styling in question section */
+  .onyx {
+    color: black;
+    font-family: Korinna;
+    font-size: 1.5em;
+  }
+  
+  /* this is the question grid which is done using flexbox */
+  #question-bank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    width: 80vw;
+    height: 50vh;
+    border: solid pink 2.5px;
+  }
+  
+  #score {
+    font-size: 1.5em;
+  }
+  
+  /* this is the flex box for rows */
+  .row {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* this handles the buttons for the questions */
+  .button {
+    min-width: 100px;
+    flex: 1;
+    cursor: pointer;
+    border: solid pink 2.5px;
+    font-size: 1.25em;
+    background-color: #1f19ab;
+    transition: visibility ease 0.3s;
+  }
+  
+  /* this handles the categories */
+  .category {
+    min-width: 100px;
+    flex: 1;
+    border: solid pink 2.5px;
+    font-size: 1em;
+    background-color: #1f19ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    background-color: #235eaa;
+  }
+  
+  /* makes the buttons invisible when js runs on click */
+  .button.invisible {
+    visibility: hidden;
+  }
+  
+  /* this is to style the answer section */
+  #user-input {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 550px;
+  }
+  
+  #user-answer {
+    display: flex;
+    border-style: solid;
+  }
+  
+  
+  #submit-button,
+  #wager-button {
+    min-width: 75px;
+    font-size: 1.25em;
+    cursor: pointer;
+    border-style: solid;
+    outline: none;
+  }
+  
+  .player-input {
+    width: 250px;
+    font-size: 1em;
+    outline: none;
+    /*-webkit-appearance: none;*/
+    border-style: solid;
+  }
+  
+  /* imports daily double image to replace content of button div */
+  #daily-double {
+    background-size: contain;
+    padding: 1px 6px;
+    cursor: default;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ffe0263-736c-4214-acc5-c57c57e76482/de4joax-5874748d-de09-4ec2-8e14-e225c55ea80e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNGZmZTAyNjMtNzM2Yy00MjE0LWFjYzUtYzU3YzU3ZTc2NDgyXC9kZTRqb2F4LTU4NzQ3NDhkLWRlMDktNGVjMi04ZTE0LWUyMjVjNTVlYTgwZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.QwGWdKdPk_hwUGdzBYgZz72jj8BwNuxRCKWDXKIAs4U");
+  }
